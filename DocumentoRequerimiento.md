@@ -80,15 +80,39 @@
 >       - Pagos fallidos.  
 >       - Impresión de tikets fallidos.  
 ### 1.7. FUNCIONES DE LAVANDERÍA MASTERCLEAN<br>
-> La función de la lavandería es ofrecer a los clientes un servicio de lavado optimo, por lo que cuidar de las prendas y los productos que se utilizan pare este fin, es de suma importancia.
->  - Servicio a cualquier usuario que desee lavar sus prendas.
->  - Ingreso a cualquier empleado activo de la empresa a la página Web.
->  - Control de inventario.
->  - Recuperación de contraseña fácil y seguro por medio de un administrador.
->  - Impresión de Ticket para el usuario.
->  - Envió de información por correo electrónico sobre status.
->  - Diferentes formas de pago, efectivo, transferencia o tarjetas Débito/Crédito.
->  - Consulta de estados de prenda.
+> La función de la lavandería es ofrecer a los clientes un servicio de lavado optimo, por lo que cuidar de las prendas y los productos que se utilizan pare este fin, es de suma importancia.  
+>  1. Servicio a cualquier usuario que desee lavar sus prendas.  
+>  2. Ingreso a cualquier empleado activo de la empresa a la página Web.  
+>  3. Control de inventario.  
+>  4. Recuperación de contraseña de usuarios fácil y seguro por medio de un administrador.  
+>  5. Impresión de Ticket para el cliente.  
+>  6. Envió de información por correo electrónico sobre status al cliente.  
+>  7. Diferentes formas de pago, efectivo, transferencia o tarjetas Débito/Crédito.  
+>  8. Consulta de estados de prenda.  
+>  9. Reportería general.  
+### 1.8. REQUERIMIENTOS FUNCIONALES<br>
+>  **Gestión de Clientes**  
+>  El sistema solo podrá brindar el servicio a clientes que se encuentren registrados asignándole un ID cliente, si no se encuentra dentro de la plataforma se deberá realizar el registro antes de recibir las prendas, se tendrá un control de los registros completo de todos los clientes con la finalidad de poder crear, modificar, eliminar o bloquear.  
+>  **Gestión de Empleados**  
+>  El sistema solo podrá aceptar el ingreso a empleados que se encuentren registrados con un código, una contraseña y método de autenticación, si no se encuentra registrado, solo el administrador podrá realizar el registro y la contraseña, se tendrá un control de los registros completo de todos los empleados con la finalidad de poder crear, modificar, eliminar o bloquear cualquier empleado.  
+>  **Gestión de Contraseñas**  
+>  Como método de seguridad, el empleado solo podrá comunicarse con el administrador cuando pierda la contraseña asignada.  
+>  **Método de Autenticación**  
+>  Como método de seguridad, el empleado solo podrá ingresar al sistema con un método de doble auntenticación, si necesita configurarlo debe llamar al administrador del sistema.  
+>  **Gestión de Consultas de estado**  
+>  Para optimizar el tiempo de entrega se integra un control de estados con la finalidad de llevar el estado de cada prenda.  
+>  **Reportería**  
+>  El sistema debe contar con un generador de reportes, para poder exportar información cuando se necesite, con la finalidad de ser aprovechada para futuros estudios de mercado o implementación de estrategias. Los reportes a generar serán los siguientes:  
+>   - Información de Clientes.  
+>   - Estados de las prendas.  
+>   - Prendas para descarte.  
+>   - Inventario de Insumos.  
+>   - Información de los proveedores.  
+>   - Detalle de los pedidos.  
+### 1.9. REQUERIMIENTOS NO FUNCIONALES<br>
+
+
+
 
 
     
