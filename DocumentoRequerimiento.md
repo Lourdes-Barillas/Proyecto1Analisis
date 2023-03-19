@@ -1,5 +1,6 @@
 # Proyecto1Analisis
 Requerimiento SRS Lavandería
+
     1. Introducción
         En el presente documento se detalla los requerimientos de software y hardware que se va a implementar en la lavandería para el correcto desarrollo y funcionamiento del sistema, dentro de los parámetros establecidos en el enunciado del proyecto.
 
