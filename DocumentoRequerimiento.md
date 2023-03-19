@@ -1,7 +1,7 @@
 # Proyecto1Analisis
-REQUERIMIENTO SRS LAVANDERÍA
+#REQUERIMIENTO SRS LAVANDERÍA
 
-    1.1.INTRODUCCIÓN
+    ##1.1.INTRODUCCIÓN
         En el presente documento se detalla los requerimientos de software y hardware 
         que se va a implementar en la lavandería para el correcto desarrollo y funcionamiento del sistema, 
         dentro de los parámetros establecidos en el enunciado del proyecto.
@@ -47,6 +47,19 @@ REQUERIMIENTO SRS LAVANDERÍA
                             y el estado de las prendas el servicio que se tiene contemplado para el desarrollo será MySQL.
             - Para nuestro proyecto, el back-up se realiza en un disco duro mecánico extraíble para mantener un método 
                             adicional a la nube como respaldo.
+        A coninuación se muestra la información que almacenará la BDD:
+            1.  **Gestión de usuarios**: almacenará la información del personal y de los clientes.
+                    	Creación.
+                    	Modificación.
+                    	Bajas.
+                    	Bloqueos.
+            
+            2. Gestión de Prendas: almacena en la BDD el tipo de prenda que ingresa al sistema.
+                    	Creación.
+                    	Modificación.
+                    	Eliminación.
+
+
     
     1.7.
 
