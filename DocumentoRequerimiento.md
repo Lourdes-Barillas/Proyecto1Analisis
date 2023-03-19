@@ -1,9 +1,9 @@
 # Proyecto1Analisis
-REQUERIMIENTO SRS LAVANDERÍA
-    1.1.INTRODUCCIÓN
-        En el presente documento se detalla los requerimientos de software y hardware 
-        que se va a implementar en la lavandería para el correcto desarrollo y funcionamiento del sistema, 
-        dentro de los parámetros establecidos en el enunciado del proyecto.   
+## REQUERIMIENTO SRS LAVANDERÍA<br>
+### 1.1.INTRODUCCIÓN<br>
+> En el presente documento se detalla los requerimientos de software y hardware  
+> que se va a implementar en la lavandería para el correcto desarrollo y funcionamiento del sistema,  
+> dentro de los parámetros establecidos en el enunciado del proyecto.  
 
     1.2.PRÓPOSITO
         La lavandería MasterClean necesita un sistema de logística de prendas que permita optimizar el 
@@ -52,11 +52,44 @@ REQUERIMIENTO SRS LAVANDERÍA
                     	Modificación.
                     	Bajas.
                     	Bloqueos.
-            2. Gestión de Prendas: almacena en la BDD el tipo de prenda que ingresa al sistema.
+            2.  Gestión de Prendas: almacena en la BDD el tipo de prenda que ingresa al sistema.
                     	Creación.
                     	Modificación.
                     	Eliminación.
-    
+            3.  Gestión de estados para las prendas: llevar un control con el estado de las prendas que ingresan al sistema-
+                    	Creación.
+                    	Modificación.
+                    	Eliminación.
+            4.  Gestión de Insumos: llevar un inventario de los productos utilizados para el lavado.
+                    	Creación.
+                    	Modificación.
+                    	Eliminación.
+                    	Bloqueos.
+            5.	Gestión de Proveedores: llevar un control de los proveedores.
+                    	Creación.
+                    	Modificación.
+                    	Eliminación.
+                    	Bloqueos.
+            6.  Bitácora Consultas: será una consulta general de todas las prendas y del listado de clientes.
+                    	Información de Clientes.
+                    	Estados de las prendas.
+                    	Prendas para descarte.
+                    	Inventario de Insumos.
+                    	Información de los proveedores.
+                    	Detalle de los pedidos.
+            7.  Excepciones: En todo sistema, se necesita de un control de excepciones para la mejora continua.
+                    	Gestión de empleados/usuarios.
+                    	Gestión de prendas.
+                    	Eliminaciones fallidas.
+                    	Cambio de estados fallidos.
+                    	Pagos fallidos.
+                    	Impresión de tikets fallidos.
+
+
+
+
+            
+
     1.7.
 
     
