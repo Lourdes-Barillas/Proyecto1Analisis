@@ -110,15 +110,15 @@
 >    - Información de los proveedores.  
 >    - Detalle de los pedidos.  
 ### 1.9. REQUERIMIENTOS NO FUNCIONALES<br>
- - **Seguridad**  
+- **Seguridad**  
 >  El sistema podrá realizar validaciones de los usuarios y clientes que no se encuentren registrados en el sistema, adicional para los empleados tendrá un método doble de autenticación para poder ingresar a la plataforma. El protocolo de seguridad que se utilizará es HTTPS permitiendo una navegación confiable y segura para que pueda almacenar información o generar reportes sin ser vulnerado.  
->  - **Mantenimiento**  
+- **Mantenimiento**  
 >  El sistema debe contar con facilidad de mantenimiento a corto y largo plazo, será desarrollado por módulos con el fin de que cualquier requerimiento futuro que exista, pueda ser modificado sin problemas en su interfaz, código, servicios y BDD´s para no perder la integridad de los datos y las funcionalidades que ofrece el sistema, adicional que contará con manual de usuario.  
->  - **Confiabilidad**  
+- **Confiabilidad**  
 >  Para lograr la confiabilidad del sistema, debe ser cuidado cada una de las Excepciones que se produzcan en el mismo al momento de utilizar el sistema con el fin de detectar mejoras y solventar inconvenientes a la brevedad posible.  
->  - **Disponibilidad**  
+- **Disponibilidad**  
 >  El sistema debe estar disponible las 24 horas dependiendo el rol, para los administradores el uso del sistema no tendrá restricciones, para los empleados si tendrá un horario especifico empezando a las 6:00 a.m. y terminando a las 6:00 p.m., y será utilizado en cualquier navegador.  
->  - **Actualización**  
+- **Actualización**  
 >  Se dará un constante monitoreo a las funcionalidades del sistema para mantenerlo actualizado frente a los diversas vulnerabilidades o errores que se produzcan.  
 ### 2.0. RESTRCCIONES<br>
 >  1. Se manejará una restricción de ingreso al sistema por seguridad, empezando de 6:00 a.m. a 6:00 p.m. para los empleados.  
