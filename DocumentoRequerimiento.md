@@ -92,23 +92,23 @@
 >  9. Reportería general.  
 ### 1.8. REQUERIMIENTOS FUNCIONALES<br>
 >  **Gestión de Clientes**  
->   El sistema solo podrá brindar el servicio a clientes que se encuentren registrados asignándole un ID cliente, si no se encuentra dentro de la plataforma se deberá realizar el registro antes de recibir las prendas, se tendrá un control de los registros completo de todos los clientes con la finalidad de poder crear, modificar, eliminar o bloquear.  
+>  - El sistema solo podrá brindar el servicio a clientes que se encuentren registrados asignándole un ID cliente, si no se encuentra dentro de la plataforma se deberá realizar el registro antes de recibir las prendas, se tendrá un control de los registros completo de todos los clientes con la finalidad de poder crear, modificar, eliminar o bloquear.  
 >  **Gestión de Empleados**  
->   El sistema solo podrá aceptar el ingreso a empleados que se encuentren registrados con un código, una contraseña y método de autenticación, si no se encuentra registrado, solo el administrador podrá realizar el registro y la contraseña, se tendrá un control de los registros completo de todos los empleados con la finalidad de poder crear, modificar, eliminar o bloquear cualquier empleado.  
+>  - El sistema solo podrá aceptar el ingreso a empleados que se encuentren registrados con un código, una contraseña y método de autenticación, si no se encuentra registrado, solo el administrador podrá realizar el registro y la contraseña, se tendrá un control de los registros completo de todos los empleados con la finalidad de poder crear, modificar, eliminar o bloquear cualquier empleado.  
 >  **Gestión de Contraseñas**  
->   Como método de seguridad, el empleado solo podrá comunicarse con el administrador cuando pierda la contraseña asignada.  
+>  - Como método de seguridad, el empleado solo podrá comunicarse con el administrador cuando pierda la contraseña asignada.  
 >  **Método de Autenticación**  
->   Como método de seguridad, el empleado solo podrá ingresar al sistema con un método de doble auntenticación, si necesita configurarlo debe llamar al administrador del sistema.  
+>  - Como método de seguridad, el empleado solo podrá ingresar al sistema con un método de doble auntenticación, si necesita configurarlo debe llamar al administrador del sistema.  
 >  **Gestión de Consultas de estado**  
->   Para optimizar el tiempo de entrega se integra un control de estados con la finalidad de llevar el estado de cada prenda.  
+>  - Para optimizar el tiempo de entrega se integra un control de estados con la finalidad de llevar el estado de cada prenda.  
 >  **Reportería**  
->   El sistema debe contar con un generador de reportes, para poder exportar información cuando se necesite, con la finalidad de ser aprovechada para futuros estudios de mercado o implementación de estrategias. Los reportes a generar serán los siguientes:  
->   - Información de Clientes.  
->   - Estados de las prendas.  
->   - Prendas para descarte.  
->   - Inventario de Insumos.  
->   - Información de los proveedores.  
->   - Detalle de los pedidos.  
+>  - El sistema debe contar con un generador de reportes, para poder exportar información cuando se necesite, con la finalidad de ser aprovechada para futuros estudios de mercado o implementación de estrategias. Los reportes a generar serán los siguientes:  
+>    - Información de Clientes.  
+>    - Estados de las prendas.  
+>    - Prendas para descarte.  
+>    - Inventario de Insumos.  
+>    - Información de los proveedores.  
+>    - Detalle de los pedidos.  
 ### 1.9. REQUERIMIENTOS NO FUNCIONALES<br>
 
 
