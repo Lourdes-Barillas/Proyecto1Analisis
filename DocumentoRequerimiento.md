@@ -3,7 +3,7 @@
     **1.1.INTRODUCCIÓN**
         En el presente documento se detalla los requerimientos de software y hardware 
         que se va a implementar en la lavandería para el correcto desarrollo y funcionamiento del sistema, 
-        dentro de los parámetros establecidos en el enunciado del proyecto.
+        dentro de los parámetros establecidos en el enunciado del proyecto.  
     **1.2.PRÓPOSITO**
         La lavandería MasterClean necesita un sistema de logística de prendas que permita optimizar el 
         funcionamiento de sus operaciones y brindar a sus clientes tiempos de entrega más rápidos integrando 
@@ -11,7 +11,7 @@
         propósito de este documento es otorgar a los analistas, desarrolladores y stakhoulders un detalle 
         de los requerimientos que se implementarán, desde el alcance hasta las pantallas que integraran dicho sistema,
         tomando en cuenta los lineamientos funcionales y no funcionales, así como también las restricciones 
-        con el fin de llevar un control de calidad a lo largo del desarrollo y que sirva como una guía para los involucrados.
+        con el fin de llevar un control de calidad a lo largo del desarrollo y que sirva como una guía para los involucrados.  
     **1.3.ALCANCE**
         Dar una solución por medio de un sistema web a la lavandería MasterClean con el objetivo de optimizar los tiempos de 
         entrega y organizar el ingreso y egreso de prendas en dicha empresa, es un desarrollo que integra a la sucursal 
