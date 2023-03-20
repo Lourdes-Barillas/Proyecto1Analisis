@@ -20,4 +20,23 @@
 >>> 2. Autenticación del cliente en su dispositivo
 >>> 3. Autenticación de administradores de insumos
 >>> 4. Autenticación de administradores y gerentes
->>> 
+#### Consulta de clientes
+>>> 1. Pantalla que consulte a un cliente para registrar el ticket solicitando el servicio de lavado
+>>> Para este requerimiento se necesita una base de datos que consulte al cliente y tenga las restricciones necesarias en las que sólo el cliente puede saber su password y el encargado de la tienda pueda asistirle desde el sistema accediendo a su código, nombre y apellido, número de teléfono, correo y otras limitantes.
+>>> 2. Pantalla para agregar a un cliente si no existe (Esto no incluye crear una cuenta en línea para ahorrar el espacio de datos que sólo cuentas en línea guardan y dejar esta decisión al cliente por si no quieren tenerla
+### Gestión de productos
+>>> Debe existir un apartado para la gestión de productos. Todo esto es discutible con el stakeholder. Se pueden introducir varias pantallas o una por cada requerimiento si son necesarios o aceptados por el cliente, determinando las siguientes funciones.
+>>> 1. Gestionar los proveedores para obtener descuentos al obtener un mayor cantidad de productos
+>>> 2. Gestionar entrada de productos
+>>> 3. Gestionar necesidad de productos
+### Agregar la prenda a un proceso de servicio de lavado
+>>> Se deben analizar las condiciones de la prenda en una pantalla administrada por el encargado de la lavandería en donde se utilicen las siguientes funciones
+>>> 1. Anotar las caraterísticas de la prenda como deficiencias de tela, color de la tela, falta de elementos como el botón de una camisa, etc.
+>>> 2. Seleccionar el tipo de servicio requerido para un cuidado adecuado de la tela
+>>> 3. Según el tipo de servicio, indicar la cantidad de tiempo que esta requerirá
+>>> 4. Después de tener la prenda lista, ponerla en la cola de entrega por 90 días.
+### Implementación de un sitio web para el usuario para tener conocimiento del proceso que lleva su tela y revisar en cuánto puede ir por ella
+>>>Este sitio web es discutible con el cliente si lo necesita o no. Esto es idea del equipo que procesa el desarrollo de la aplicación y si el cliente lo acepta, lo implementamos. Esto queda al pendiente de una respuesta del cliente.
+#### Características principales del sitio
+>>> 1. Login del cliente
+>>> 2. Ver en tiempo real el proceso de su prenda
