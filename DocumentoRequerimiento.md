@@ -94,7 +94,9 @@
 - **Gestión de Clientes**  
 >  El sistema solo podrá brindar el servicio a clientes que se encuentren registrados asignándole un ID cliente, si no se encuentra dentro de la plataforma se deberá realizar el registro antes de recibir las prendas, se tendrá un control de los registros completo de todos los clientes con la finalidad de poder crear, modificar, eliminar o bloquear.  
 - **Gestión de Empleados**  
->  El sistema solo podrá aceptar el ingreso a empleados que se encuentren registrados con un código, una contraseña y método de autenticación, si no se encuentra registrado, solo el administrador podrá realizar el registro y la contraseña, se tendrá un control de los registros completo de todos los empleados con la finalidad de poder crear, modificar, eliminar o bloquear cualquier empleado.  
+>  El sistema solo podrá aceptar el ingreso a empleados que se encuentren registrados con un código, una contraseña y método de autenticación, si no se encuentra registrado, solo el administrador podrá realizar el registro y la contraseña, se tendrá un control de los registros completo de todos los empleados con la finalidad de poder crear, modificar, eliminar o bloquear cualquier empleado. 
+- **Gestión de Insumos**  
+>  El sistema llevará un inventario con la finalidad de tener un control de los insumos que se utilizan para el lavado de las prendas, se le asignará un código de insumo para catalogar los productos, si el insumo no esta registrado el empleado tendrá la opción de registrar, modificar o eliminar cualquier insumo.   
 - **Gestión de Contraseñas**  
 >  Como método de seguridad, el empleado solo podrá comunicarse con el administrador cuando pierda la contraseña asignada.  
 - **Método de Autenticación**  
