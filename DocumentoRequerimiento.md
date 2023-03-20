@@ -47,11 +47,11 @@
 >       - Modificación.  
 >       - Bajas.  
 >       - Bloqueos.  
->   2. ***Gestión de Prendas***: almacena en la BDD el tipo de prenda que ingresa al sistema.  
+>   2. ***Gestión de Órdenes***: almacena en la BDD el tipo de órden que ingresa al sistema.  
 >       - Creación.  
 >       - Modificación.  
 >       - Eliminación.  
->   3. ***Gestión de estados para las prendas***: llevar un control con el estado de las prendas que ingresan al sistema.  
+>   3. ***Gestión de estados para las órdenes***: llevar un control con el estado de las órdenes que ingresan al sistema.  
 >       - Creación.  
 >       - Modificación.  
 >       - Eliminación.  
@@ -66,12 +66,11 @@
 >       - Eliminación.  
 >       - Bloqueos.  
 >   6. ***Bitácora Consultas***: será una consulta general de todas las prendas y del listado de clientes.  
->       - Información de Clientes.  
->       - Estados de las prendas.  
->       - Prendas para descarte.  
+>       - Informe de Clientes.  
+>       - Detalle de órdenes.  
+>       - Descarte de prendas mayor a 90 días.  
 >       - Inventario de Insumos.  
->       - Información de los proveedores.  
->       - Detalle de los pedidos.  
+>       - Bitácora de Excepciones.    
 >   7. ***Excepciones***: En todo sistema, se necesita de un control de excepciones para la mejora continua.  
 >       - Gestión de empleados/usuarios.  
 >       - Gestión de prendas.  
@@ -79,7 +78,74 @@
 >       - Cambio de estados fallidos.  
 >       - Pagos fallidos.  
 >       - Impresión de tikets fallidos.  
-### 1.7. FUNCIONES DE LAVANDERÍA MASTERCLEAN<br>
+### 1.7. INTERFAZ DE USUARIO<br>
+-	**Interfaz Principal**   
+>   Él administrador y los empleados al ingresar a la página web tendrán una vista principal, donde deberá colocar su usuario y contraseña para ingresar al sistema, en caso de no contar con usuario o perder la contraseña, deberá solicitarle al administrador la creación de usuario o reinicio de contraseña.  
+-	**Interfaz de Módulos**  
+>   En esta pantalla el empleado tendrá una barra de herramientas en el perfil izquierdo de forma estática, el cual contará con los módulos siguientes:  
+>   - Registro.  
+>   - Ordenes.  
+>   - Consultas.  
+>   - Reportería.  
+>   - Salida de la aplicación.  
+-	**Módulo de Registro**  
+>   En esta opción al empleado se le desplegará en la pantalla central un menú de sub-opciones que constará de las siguientes:  
+>   - ***Registro Clientes***: el empleado podrá crear en esta opción a un cliente nuevo, ingresando los datos principales como DPI, NIT, Nombre y apellido, dirección y teléfono, el sistema creará un ID de cliente de forma automática.  
+>   - ***Registro Insumos***: el empleado podrá crear en esta opción un nuevo insumo cuando no exista en el sistema, ingresando los datos principales como Nombre de Insumo y Proveedor, el sistema creará un ID automáticamente y se lo asignará al insumo.  
+>   - ***Control de Inventarios***: el empleado al ingresar a esta opción podrá visualizar el inventario en tiempo real, con los siguientes ítems:  
+>       - ID del insumo.  
+>       - Nombre de insumo.  
+>       - Disponibilidad.  
+>       - Botón de consulta Detalle, donde podrá registrar entradas y salidas del mismo.  
+-	**Módulo de Ordenes**  
+>   En esta opción al empleado se le desplegará en la pantalla central un menú de sub-opciones que constará de las siguientes:  
+>   - ***Ingreso de órdenes***: se desplegará otra pantalla para poder ingresar una orden nueva, se ingresará el número de DPI del cliente y al presionar el icono de lupa se filtrará, con este filtro se visualizará la información básica del mismo, Id cliente, nombre y un botón de ingreso de orden para poder registrar una orden nueva y generar un ticket impreso al cliente.  
+>   - ***Cancelación de órdenes***: en esta opción se podrán cancelar órdenes, buscando con el número de orden.  
+>   - ***Consulta de órdenes***: en esta opción, el usuario con el número de orden podrá consultar el estatus de la misma, los cuales serán:  
+>       - Pendiente de Lavado.  
+>       - Proceso de lavado.  
+>       - Pendiente de Entrega al cliente.  
+>       - Entregado al cliente.  
+>       - Cancelado.  
+>       - Desechado.  
+-	**Módulo de Consultas**  
+>   En esta opción al empleado se le desplegará en la pantalla central un menú de sub-opciones que constará de las siguientes:  
+>   - ***Consulta de Clientes***: se visualizará en la pantalla principal el listado de clientes que se encuentran registrados, o se podrá buscar un cliente especifico con el número de DPI en el buscador de clientes, estos tendrán 2 opciones modificar o eliminar un registro.  
+>   - ***Consulta de Insumos***: se visualizará en la pantalla principal el listado de insumos que se encuentran registrados, o se podrá buscar un insumo especifico con el ID en el buscador de insumos, este tendrá la opción de eliminar el registro.  
+-	**Módulo de Reportería**  
+>   En esta opción al empleado se le desplegará en la pantalla central un menú de sub-opciones que constará de las siguientes:  
+>   - ***Informe de Clientes***: se exportará en un archivo .txt, la información general de los clientes registrados en el sistema:  
+>       - ID cliente.  
+>       - DPI.  
+>       - NIT.  
+>       - Nombre.  
+>       - Dirección.  
+>       - Teléfono.  
+>   - ***Detalle de órdenes***: se exportará en un archivo .txt la información general de las ordenes ingresadas, con la opción de rango de fechas, la información a generar será:  
+>       - No. Orden.  
+>       - Detalle del cliente.  
+>       - Detalle de prendas.  
+>       - Total.  
+>       - Fecha de Recepción.  
+>       - Días en lavandería después de lavado.  
+>       - Fecha de Entrega al cliente.  
+>   - ***Descarte de prendas mayor a 90 días***: se exportará en un archivo .txt la información de la orden con las prendas a desechar.  
+>       - No. Orden.  
+>       - Nombre de cliente.  
+>       - Fecha de Recepción.  
+>       - Fecha de Descarte.  
+>   - ***Inventario de Insumos***: se exportará en un archivo .txt la información del inventario de insumos, con la siguiente información:  
+>       - Id insumo.  
+>       - Nombre insumo.  
+>       - Proveedor.  
+>       - Cantidad existencia.  
+>       - Se necesita pedido.  
+>   - ***Bitácora de Excepciones***: se exportará en un archivo .txt la información del Excepciones, con la siguiente información:  
+>       - Id Excepción.  
+>       - Nombre Excepción.  
+>       - Fecha de la Excepción.  
+>       - Impacto de la Excepción (Alto, Medio, Bajo).  
+### 1.8. FUNCIONES DE LAVANDERÍA MASTERCLEAN<br>
 > La función de la lavandería es ofrecer a los clientes un servicio de lavado optimo, por lo que cuidar de las prendas y los productos que se utilizan pare este fin, es de suma importancia.  
 >  1. Servicio a cualquier usuario que desee lavar sus prendas.  
 >  2. Ingreso a cualquier empleado activo de la empresa a la página Web.  
@@ -87,10 +153,10 @@
 >  4. Recuperación de contraseña de usuarios fácil y seguro por medio de un administrador.  
 >  5. Impresión de Ticket para el cliente.  
 >  6. Envió de información por correo electrónico sobre status al cliente.  
->  7. Diferentes formas de pago, efectivo, transferencia o tarjetas Débito/Crédito.  
+>  7. Pago por medio de efectivo.  
 >  8. Consulta de estados de prenda.  
 >  9. Reportería general.  
-### 1.8. REQUERIMIENTOS FUNCIONALES<br>
+### 1.9. REQUERIMIENTOS FUNCIONALES<br>
 - **Gestión de Clientes**  
 >  El sistema solo podrá brindar el servicio a clientes que se encuentren registrados asignándole un ID cliente, si no se encuentra dentro de la plataforma se deberá realizar el registro antes de recibir las prendas, se tendrá un control de los registros completo de todos los clientes con la finalidad de poder crear, modificar, eliminar o bloquear.  
 - **Gestión de Empleados**  
@@ -105,13 +171,12 @@
 >  Para optimizar el tiempo de entrega se integra un control de estados con la finalidad de llevar el estado de cada prenda.  
 - **Reportería**  
 >  El sistema debe contar con un generador de reportes, para poder exportar información cuando se necesite, con la finalidad de ser aprovechada para futuros estudios de mercado o implementación de estrategias. Los reportes a generar serán los siguientes:  
->    - Información de Clientes.  
->    - Estados de las prendas.  
->    - Prendas para descarte.  
+>    - Informe de Clientes.  
+>    - Detalle de órdenes.  
+>    - Descarte de prendas mayor a 90 días.  
 >    - Inventario de Insumos.  
->    - Información de los proveedores.  
->    - Detalle de los pedidos.  
-### 1.9. REQUERIMIENTOS NO FUNCIONALES<br>
+>    - Bitácora de Excepciones.    
+### 1.10. REQUERIMIENTOS NO FUNCIONALES<br>
 - **Seguridad**  
 >  El sistema podrá realizar validaciones de los usuarios y clientes que no se encuentren registrados en el sistema, adicional para los empleados tendrá un método doble de autenticación para poder ingresar a la plataforma. El protocolo de seguridad que se utilizará es HTTPS permitiendo una navegación confiable y segura para que pueda almacenar información o generar reportes sin ser vulnerado.  
 - **Mantenimiento**  
@@ -122,12 +187,12 @@
 >  El sistema debe estar disponible las 24 horas dependiendo el rol, para los administradores el uso del sistema no tendrá restricciones, para los empleados si tendrá un horario especifico empezando a las 6:00 a.m. y terminando a las 6:00 p.m., y será utilizado en cualquier navegador.  
 - **Actualización**  
 >  Se dará un constante monitoreo a las funcionalidades del sistema para mantenerlo actualizado frente a los diversas vulnerabilidades o errores que se produzcan.  
-### 2.0. RESTRCCIONES<br>
->  1. Se manejará una restricción de ingreso al sistema por seguridad, empezando de 6:00 a.m. a 6:00 p.m. para los empleados.  
->  2. Se dará un máximo de 90 días para que el cliente pueda recoger su prenda, de lo contrario se desechará del sistema.  
+### 1.11. RESTRICCIONES<br>
+>  1. Se manejará una restricción de ingreso al sistema por seguridad, empezando de 6:00 a.m. a 6:00 p.m. para los empleados.   
+>  2. Se dará un máximo de 90 días para que el cliente pueda recoger su prenda, de lo contrario se desechará del sistema.   
 >  3. No hay limitaciones de software, ya que se cuenta con los insumos necesarios para el desarrollo.  
 >  4. Solo se utilizará aplicación Web.  
 >  5. Solo se podrá trabajar en paralelo con conexión a MySQL Server.  
 >  6. Este sistema debe ser auditable.  
->  7. No se permitirán otros protocolos que no estén contemplados en este documento TCP/IP, HTTPS.  
-
+>  7. No se permitirán otros protocolos que no estén contemplados en este documento TCP/IP, HTTPS. 
+>  8. Solo se permitirá pagos en efectivo para poder retirar las prendas.  
