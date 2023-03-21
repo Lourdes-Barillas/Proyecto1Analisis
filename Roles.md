@@ -1,0 +1,8 @@
+# Team de desarrollo
+- 7690-18-4545 MOSES DANIEL MELCHOR MORALES
+- WILSON ALEXANDER PAREDES PEREZ
+
+# Product Owner
+- 7690-19-13407 Katherine Dayana Baten Pineda
+# Scrum Master
+- 7690-19-5420 LOURDES ADRIANA PÉREZ BARILLAS
